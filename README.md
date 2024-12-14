@@ -11,6 +11,13 @@ This application provides a customizable sign-up form component with built-in va
 - Real-time validation feedback
 - Customizable submission handling
 
+## Project Structure
+
+The project follows a modular architecture with two main folders:
+
+- `components/` - Contains shared, reusable UI components that can be used across different features
+- `features/` - Contains complete feature implementations with their business logic and specific components
+
 ## Available Scripts
 
 In the project directory, you can run:
