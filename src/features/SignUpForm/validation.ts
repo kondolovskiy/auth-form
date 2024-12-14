@@ -14,11 +14,6 @@ export const passwordRules: PasswordRule[] = [
         label: 'At least one digit',
         test: (value) => /\d/.test(value),
     },
-    // there is requirement for 64 characters in the task but no relevant design for this message in figma. Uncomment if needed
-    // {
-    //     label: 'No more than 64 characters (no spaces)',
-    //     test: (value) => value.length > 0 && value.length <= 64 && !/\s/.test(value),
-    // },
 ];
 
 export const validationSchema = Yup.object().shape({
