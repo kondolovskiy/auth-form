@@ -1,5 +1,5 @@
 .error-message {
-    color: #f44336;
+    color: var(--error-color);
     font-size: 14px;
     margin: 4px 0;
     padding: 5px 20px 0;
@@ -16,23 +16,23 @@
     transition: border-color 0.2s ease;
 
     &.valid {
-        border-color: #27B274;
+        border-color: var(--success-color);
 
         & > input {
-            color: #27B274;
+            color: var(--success-color);
         }
     }
 
     &.invalid {
-        border-color: #f44336;
+        border-color: var(--error-color);
 
         & > input {
-            color: #f44336;
+            color: var(--error-color);
         }
     }
 
     &:focus-within {
-        border-color: #6F91BC;
+        border-color: var(--focus-color);
     }
     
     & > input {
@@ -41,10 +41,10 @@
         padding: 0;
         outline: none;
         font-size: 16px;
-        color: #4A4E71;
+        color: var(--text-color);
 
         &::placeholder {
-            color: #6F91BC;
+            color: var(--focus-color);
         }
     }
 }

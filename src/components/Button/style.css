@@ -1,5 +1,5 @@
 .submit-button {
-    background: linear-gradient(150deg, #70C3FF 0%, #4B65FF 100%);
+    background: linear-gradient(150deg, var(--secondary-color) 0%, var(--primary-color) 100%);
     color: #fff;
     border: none;
     border-radius: 30px;
