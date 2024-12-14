@@ -7,29 +7,18 @@ import { useForm } from './useForm';
 import './styles.scss';
 
 export const SignUpForm = ({ onSubmit }: SignUpFormProps) => {
-    const formik = useForm(onSubmit);
-
-    const getProps = (name: 'email' | 'password') => {
-        return {
-            name,
-            defaultValue: formik.values[name],
-            onChange: formik.handleChange,
-            onFocus: () => formik.setFieldTouched(name, false),
-            error: formik.touched[name] && formik.errors[name],
-            isValid: formik.touched[name] && !formik.errors[name],
-        };
-    };
+    const { submit, getInputProps } = useForm(onSubmit);
 
     return (
         <div className="sign-up-form">
-            <form onSubmit={formik.handleSubmit} noValidate>
+            <form onSubmit={submit} noValidate>
                 <h1 className="sign-up-form__title">Sign Up</h1>
                 <Input
-                    {...getProps('email')}
+                    {...getInputProps('email')}
                     placeholder="Email"
                 />
                 <Password
-                    {...getProps('password')}
+                    {...getInputProps('password')}
                     passwordRules={passwordRules}
                     placeholder="Create your password"
                 />
