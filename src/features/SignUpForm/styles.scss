@@ -1,0 +1,22 @@
+.sign-up-form {
+    padding-top: 94px;
+    background: url('../../assets/stars.png') center 35px no-repeat;
+    & > form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #4A4E71;
+        padding: 0;
+        margin-bottom: 16px;
+    }
+
+    .submit-button {
+        margin-top: 15px;
+    }
+}

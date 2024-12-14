@@ -1,0 +1,45 @@
+.password-rules {
+    list-style: none;
+    padding: 5px 20px 0;
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.rule-item {
+    color: #666;
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+
+.rule-item.valid {
+    color: #27B274;
+}
+
+.rule-item.invalid {
+    color: #f44336;
+}
+
+.show-password-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.input-container {
+
+    svg.icon > * {
+        fill: #6F91BC;
+    }
+
+    &.valid svg.icon > * {
+        fill: #27B274;
+    }
+
+    &.invalid svg.icon > * {
+        fill: #f44336;
+    }
+}

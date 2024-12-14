@@ -1,0 +1,49 @@
+.error-message {
+    color: #f44336;
+    font-size: 14px;
+    margin: 4px 0;
+    padding: 5px 20px 0;
+}
+
+.input-container {
+    display: flex;
+    width: 275px;
+    height: 28px;
+    border-radius: 10px;
+    background: #fff;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    transition: border-color 0.2s ease;
+
+    &.valid {
+        border-color: #27B274;
+
+        & > input {
+            color: #27B274;
+        }
+    }
+
+    &.invalid {
+        border-color: #f44336;
+
+        & > input {
+            color: #f44336;
+        }
+    }
+
+    &:focus-within {
+        border-color: #6F91BC;
+    }
+    
+    & > input {
+        width: 100%;
+        border: 0;
+        padding: 0;
+        outline: none;
+        font-size: 16px;
+
+        &::placeholder {
+            color: #6F91BC;
+        }
+    }
+}
