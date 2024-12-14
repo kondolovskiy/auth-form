@@ -25,7 +25,6 @@ export const Password = ({ passwordRules, error, ...props }: PasswordProps) => {
         <div>
             <Input 
                 type={showPassword ? 'text' : 'password'} 
-                placeholder="Password" 
                 actionButton={
                     <button className="show-password-button" onClick={handleShowPassword}>
                         {showPassword ? (<HideIcon />) : (<ShowIcon />)}
