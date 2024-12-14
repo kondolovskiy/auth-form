@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Input, { InputProps } from '../Input';
 import type { PasswordRule } from '../../types/PasswordRule';
 import { HideIcon, ShowIcon } from '../Icons';
-import './styles.css';
+import './styles.scss';
 
 type PasswordProps = InputProps & {
     passwordRules?: PasswordRule[];
