@@ -2,7 +2,7 @@ export type SignUpFormProps = {
     onSubmit: (values: FormValues) => void;
 };
 
-export interface FormValues {
+export type FormValues = {
     email: string;
     password: string;
 }
