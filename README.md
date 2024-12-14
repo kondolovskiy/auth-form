@@ -8,7 +8,7 @@ This application provides a customizable sign-up form component with built-in va
 
 - Email validation
 - Password strength requirements
-- Real-time validation feedback
+- Real-time password validation feedback
 - Customizable submission handling
 
 ## Project Structure
