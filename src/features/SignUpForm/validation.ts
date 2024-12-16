@@ -27,6 +27,9 @@ export const validationSchema = Yup.object().shape({
     password: Yup.string()
         .min(8, 'Password must be at least 8 characters')
         .max(64, 'Password must be at most 64 characters')
-        .matches(/^(?=.*[A-Z])(?=.*\d)[^\s]+$/, 'Password must contain at least one uppercase letter and one digit')
+        .test('password-rules', 'Password does not meet requirements', (value) => {
+            if (!value) return false;
+            return passwordRules.every((rule) => rule.test(value));
+        })
         .required('Password is required'),
 });
